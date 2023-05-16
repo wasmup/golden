@@ -4,6 +4,22 @@
 
 ## Logger
 
+```go
+package main
+
+import (
+	"github.com/wasmup/golden/elog"
+	"github.com/wasmup/golden/info"
+	"github.com/wasmup/golden/warn"
+)
+
+func main() {
+	info.Println("This is an informational log message")
+	warn.Println("This is a warning log message")
+	elog.Println("This is an error log message")
+}
+```
+
 ### Advantages
 
 Flexibility and Features: External logging packages often provide a wide range of features and customization options, such as log level filtering, different output formats, log rotation, and more. These packages are frequently well-maintained and offer comprehensive functionality.
